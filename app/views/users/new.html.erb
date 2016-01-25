@@ -1,0 +1,17 @@
+new user
+
+<%= form_for @user do |usr| %>
+  <p>
+    <%= usr.label :name %><br>
+    <%= usr.text_field :name %>
+  </p>
+  <p>
+    <%= usr.label :email %><br>
+    <%= usr.text_field :email %>
+  </p>
+
+  <p>
+    <%= usr.submit %>
+  </p>
+
+<% end %>
